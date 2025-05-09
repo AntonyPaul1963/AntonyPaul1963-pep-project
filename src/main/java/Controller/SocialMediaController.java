@@ -85,7 +85,7 @@ public class SocialMediaController {
             Message message = messageService.getMessageById(messageId);
             ctx.json(message != null ? message : "");
         } catch (NumberFormatException e) {
-            ctx.json("");
+            ctx.json("");   
         }
     }
 
